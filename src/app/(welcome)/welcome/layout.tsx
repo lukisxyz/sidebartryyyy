@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/modules/layout/header";
-import Footer from "@/components/modules/layout/footer";
+import "@/app/globals.css";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Poppins({
   subsets: ["latin"],
@@ -22,11 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} relative p-4 wrapper mx-auto w-full max-w-lg`}
+        className={`${inter.className} p-4 wrapper relative mx-auto w-full max-w-lg`}
       >
-        <Header />
+        <div className="welcome-page -z-10" />
         {children}
-        <Footer />
+        <Toaster />
       </body>
     </html>
   );

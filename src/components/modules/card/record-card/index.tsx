@@ -13,12 +13,12 @@ export default function RecordCard(props: RecordView) {
   return (
     <Card className="mb-3">
       <Link href={`/record/${id}`}>
-        <CardHeader className="p-3 pb-1">
+        <CardHeader className="pb-1">
           <CardTitle className="text-stone-700 text-sm">
             {categoryName}
           </CardTitle>
         </CardHeader>
-        <CardContent className="p-3 pt-0">
+        <CardContent className="pt-0">
           <div className="flex items-center justify-between">
             <p
               className={`${raleway.className} font-medium text-lg ${
