@@ -18,7 +18,7 @@ export default async function Home() {
         </h2>
         <Link
           className="flex items-center gap-1 text-sm font-medium text-blue-600"
-          href="/history"
+          href="/record"
         >
           <span className="font-medium">see more</span>
           <svg

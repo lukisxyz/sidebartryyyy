@@ -29,7 +29,7 @@ export default function SummaryCard() {
       <CardFooter>
         <Link
           className="flex items-center gap-1 text-sm text-blue-600"
-          href="/"
+          href="/report"
         >
           <span className="font-medium">Load more</span>
           <svg
