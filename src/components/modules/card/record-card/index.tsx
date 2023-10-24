@@ -1,12 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { RecordView } from "@/lib/types";
+import { RecordViewItem } from "@/lib/types";
 import { formatDate, formatRupiah } from "@/lib/utils";
 import Link from "next/link";
 import { Raleway } from "next/font/google";
 
 const raleway = Raleway({ subsets: ["latin"] });
 
-export default function RecordCard(props: RecordView) {
+export default function RecordCard(props: RecordViewItem) {
   const { categoryName, amount, date, isExpense, id } = props;
   const formattedDate = formatDate(date);
   const formattedAmount = formatRupiah(amount);

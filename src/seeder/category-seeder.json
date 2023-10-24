@@ -1,0 +1,64 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Groceries"
+    },
+    {
+      "id": 2,
+      "name": "Utilities"
+    },
+    {
+      "id": 3,
+      "name": "Dining Out"
+    },
+    {
+      "id": 4,
+      "name": "Transportation"
+    },
+    {
+      "id": 5,
+      "name": "Entertainment"
+    },
+    {
+      "id": 6,
+      "name": "Healthcare"
+    },
+    {
+      "id": 7,
+      "name": "Education"
+    },
+    {
+      "id": 8,
+      "name": "Clothing"
+    },
+    {
+      "id": 9,
+      "name": "Travel"
+    },
+    {
+      "id": 10,
+      "name": "Home Improvement"
+    },
+    {
+      "id": 11,
+      "name": "Gifts"
+    },
+    {
+      "id": 12,
+      "name": "Technology"
+    },
+    {
+      "id": 13,
+      "name": "Pets"
+    },
+    {
+      "id": 14,
+      "name": "Books"
+    },
+    {
+      "id": 15,
+      "name": "Miscellaneous"
+    }
+  ]
+}

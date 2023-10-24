@@ -1,0 +1,55 @@
+{
+  "main": {
+    "expense": 1400000,
+    "balance": 9800000,
+    "income": 6733300
+  },
+  "weekly": [12340, 19000, 22000, 8000, 9900, 12000, 23400],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Groceries",
+      "value": 125000.0
+    },
+    {
+      "id": 3,
+      "name": "Dining Out",
+      "value": 11000.0
+    },
+    {
+      "id": 4,
+      "name": "Transportation",
+      "value": 115000.0
+    },
+    {
+      "id": 6,
+      "name": "Healthcare",
+      "value": 150000.0
+    },
+    {
+      "id": 7,
+      "name": "Education",
+      "value": 220000.0
+    },
+    {
+      "id": 10,
+      "name": "Home Improvement",
+      "value": 155000.0
+    },
+    {
+      "id": 11,
+      "name": "Gifts",
+      "value": 125000.0
+    },
+    {
+      "id": 12,
+      "name": "Technology",
+      "value": 210000.0
+    },
+    {
+      "id": 15,
+      "name": "Miscellaneous",
+      "value": 105000.0
+    }
+  ]
+}

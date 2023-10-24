@@ -1,6 +1,5 @@
 import RecordCard from "@/components/modules/card/record-card";
 import homeData from "@/seeder/home-seeder.json";
-import Link from "next/link";
 
 async function getData() {
   return homeData;
