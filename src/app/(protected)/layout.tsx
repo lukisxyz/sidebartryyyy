@@ -4,7 +4,9 @@ import "@/app/globals.css";
 import Header from "@/components/modules/layout/header";
 import Footer from "@/components/modules/layout/footer";
 import { Toaster } from "@/components/ui/toaster";
-import AuthCheck from "@/components/modules/auth/auth-check";
+import { authOptions } from "@/lib/auth";
+import { getServerSession } from "next-auth";
+import { RedirectType, redirect } from "next/navigation";
 
 const inter = Poppins({
   subsets: ["latin"],
@@ -21,12 +23,15 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const session = await getServerSession(authOptions);
+  if (!session) {
+    redirect("/login", RedirectType.replace);
+  }
   return (
     <html lang="en">
       <body
         className={`${inter.className} relative p-4 wrapper mx-auto w-full max-w-lg`}
       >
-        <AuthCheck />
         <Header />
         {children}
         <Footer />

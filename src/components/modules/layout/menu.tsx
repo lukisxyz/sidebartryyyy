@@ -2,14 +2,14 @@
 
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
-import { auth } from "@/lib/firebase";
 import Link from "next/link";
+import { signOut } from "next-auth/react";
 
 export default function Menu({ onClick }: { onClick: Function }) {
   const { toast } = useToast();
-  const handleLogout = async () => {
+  const onLogout = async () => {
     try {
-      await auth.signOut();
+      signOut({ callbackUrl: "/login" });
     } catch (error) {
       toast({
         title: "Logout: failed",
@@ -86,7 +86,7 @@ export default function Menu({ onClick }: { onClick: Function }) {
         <Button
           variant="link"
           className="text-lg font-semibold text-stone-600"
-          onClick={handleLogout}
+          onClick={onLogout}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
