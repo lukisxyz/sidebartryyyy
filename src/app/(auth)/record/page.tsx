@@ -1,5 +1,5 @@
 import RecordCard from "@/components/modules/card/record-card";
-import homeData from "@/seeder/home-seeder.json";
+import homeData from "@/seeder/record-seeder.json";
 
 async function getData() {
   return homeData;
@@ -14,7 +14,7 @@ export default async function Record() {
           Latest Transactions
         </h2>
       </div>
-      {(data.latest_records || []).map((i) => (
+      {(data.records || []).map((i) => (
         <RecordCard key={i.id} {...i} />
       ))}
     </main>

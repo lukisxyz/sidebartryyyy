@@ -75,6 +75,7 @@ export default function Menu({ onClick }: { onClick: Function }) {
           variant="link"
           className="text-lg font-semibold text-stone-600"
           asChild
+          disabled
           onClick={() => onClick()}
         >
           <Link href="/setting">Settings</Link>
